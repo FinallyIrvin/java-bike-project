@@ -15,12 +15,17 @@ public class TouringBike extends AbstractRoadBike{
     }
 
     @Override
-    protected int getStartNumber() {
+    public int getStartNumber() {
         return 951357;
     }
 
     @Override
-    protected String getPrefix() {
+    public String getPrefix() {
         return "TB901";
+    }
+
+    @Override
+    public String toString() {
+        return "Touring Bike";
     }
 }

@@ -1,5 +1,7 @@
 package com.acme.model;
 
+import java.math.BigDecimal;
+
 public abstract class AbstractRoadBike extends AbstractBike {
 
     public AbstractRoadBike(FrameColors color) {
@@ -7,7 +9,17 @@ public abstract class AbstractRoadBike extends AbstractBike {
     }
 
     @Override
-    protected String getWheelType() {
+    public String getWheelType() {
         return "Normal";
+    }
+
+    @Override
+    public BigDecimal getOptionAmount() {
+        return BigDecimal.valueOf(0.00);
+    }
+
+    @Override
+    public String getOptionName() {
+        return "";
     }
 }
